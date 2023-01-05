@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>   
+        <div id="box">
+            <h1> Minesweeper </h1>
+            <div class="dropdown"> 
+                <button class="dropbtn">Choose the level</button> 
+                <div class="dropdown-content"> 
+                    <a href="#" onclick="createGameBoard(9, 9, 30, 10)">Easy</a>
+                    <a href="#" onclick="createGameBoard(16, 16, 30, 40)">Medium</a>
+                    <a href="#" onclick="createGameBoard(30, 16, 31, 99)">Hard</a>
+                </div> 
+            </div>
+            <br><br><br>
+            <div id="coords"></div>
+            <div id="board" class="cell" oncontextmenu="event.preventDefault()"></div>
+            <h2 class="gameStatus"></h2>
+        </div>
+        <script src="script.js"></script>       
+    </body>
+</html>
