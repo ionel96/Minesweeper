@@ -123,4 +123,4 @@ function createGameBoard(cols, rows, blockSize, bombs) {
     placeBombs(gameBoard);
 }
 
-document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('mouseup', checkCell));
+document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('mouseup', checkCell)); 
